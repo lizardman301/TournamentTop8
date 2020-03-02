@@ -1,0 +1,62 @@
+input[type=number] {
+    width: 40px;
+}
+
+#challonge {
+    position: fixed;
+    top: 50%;
+}
+
+#title{
+    text-align: center;
+    top: 0%;
+    left: 50%;
+}
+
+#ws{
+    position:fixed;
+    top: 10%;
+    left: 5%;
+}
+
+#wf{
+    position:fixed;
+    top: 14%;
+    left: 27%;
+}
+
+#l8{
+    position: fixed;
+    top: 30%;
+    left: 5%;
+}
+
+#lq{
+    position: fixed;
+    top: 30%;
+    left: 27%
+}
+
+#ls{
+    position: fixed;
+    top: 34%;
+    left: 50%;
+}
+
+#lf{
+    position: fixed;
+    top: 34%;
+    left: 73%;
+}
+
+#gf{
+    position: fixed;
+    top: 14%;
+    left: 73%;
+}
+
+#manual_button{
+    position: fixed;
+    top: 50%;
+    left: 73%;
+}

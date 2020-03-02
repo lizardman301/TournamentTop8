@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lizard's Eight</title>
+
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript">
+        function updateJSON_challonge() {
+            var u = document.getElementById("user").value
+            var k = document.getElementById("key").value
+            var l = document.getElementById("url").value
+            eel.pull_challonge(u, k, l)
+          //  alert("Json updated!")
+        }
+
+        function updateJSON_manual() {
+            //creating an array to pass to the python portion to easily output the json
+            var array = [];
+            array.push("ws_1");
+            array.push(document.getElementById("ws_1_player1").value);
+            array.push(document.getElementById("ws_1_player2").value);
+            array.push(document.getElementById("ws_1_p1score").value);
+            array.push(document.getElementById("ws_1_p2score").value);
+
+            array.push("ws_2");
+            array.push(document.getElementById("ws_2_player1").value);
+            array.push(document.getElementById("ws_2_player2").value);
+            array.push(document.getElementById("ws_2_p1score").value);
+            array.push(document.getElementById("ws_2_p2score").value);
+
+            array.push("wf_1");
+            array.push(document.getElementById("wf_1_player1").value);
+            array.push(document.getElementById("wf_1_player2").value);
+            array.push(document.getElementById("wf_1_p1score").value);
+            array.push(document.getElementById("wf_1_p2score").value);
+
+            array.push("l8_1");
+            array.push(document.getElementById("l8_1_player1").value);
+            array.push(document.getElementById("l8_1_player2").value);
+            array.push(document.getElementById("l8_1_p1score").value);
+            array.push(document.getElementById("l8_1_p2score").value);
+
+            array.push("l8_2");
+            array.push(document.getElementById("l8_2_player1").value);
+            array.push(document.getElementById("l8_2_player2").value);
+            array.push(document.getElementById("l8_2_p1score").value);
+            array.push(document.getElementById("l8_2_p2score").value);
+
+            array.push("lq_1");
+            array.push(document.getElementById("lq_1_player1").value);
+            array.push(document.getElementById("lq_1_player2").value);
+            array.push(document.getElementById("lq_1_p1score").value);
+            array.push(document.getElementById("lq_1_p2score").value);
+
+            array.push("lq_2");
+            array.push(document.getElementById("lq_2_player1").value);
+            array.push(document.getElementById("lq_2_player2").value);
+            array.push(document.getElementById("lq_2_p1score").value);
+            array.push(document.getElementById("lq_2_p2score").value);
+
+            array.push("ls_1");
+            array.push(document.getElementById("ls_1_player1").value);
+            array.push(document.getElementById("ls_1_player2").value);
+            array.push(document.getElementById("ls_1_p1score").value);
+            array.push(document.getElementById("ls_1_p2score").value);
+
+            array.push("lf_1");
+            array.push(document.getElementById("lf_1_player1").value);
+            array.push(document.getElementById("lf_1_player2").value);
+            array.push(document.getElementById("lf_1_p1score").value);
+            array.push(document.getElementById("lf_1_p2score").value);
+
+            array.push("gf_1");
+            array.push(document.getElementById("gf_1_player1").value);
+            array.push(document.getElementById("gf_1_player2").value);
+            array.push(document.getElementById("gf_1_p1score").value);
+            array.push(document.getElementById("gf_1_p2score").value);
+            eel.parse_manual(array)
+           // alert("json updated")
+        }
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+    <body>
+        <h1 id="title">Lizard's Eight</h1>
+        <div id="challonge">
+           <form>
+               Use Challonge <br />
+               Challonge Username: <br />
+               <input type="text" id="user" name="username" /><br />
+               Challonge API Key: <br />
+               <input type="password" id="key" name="api_key" /><br />
+               Challonge bracket URL: <br />
+               <input type="text" id="url" name="challonge_url" /><br />
+           </form>
+           <button onclick="updateJSON_challonge()">Update JSON</button>
+        </div>
+
+        <div id="manual_entry">
+            <div id="ws">
+            Winner's semis <br />
+            <form id="ws_1">
+                <input type="text" id="ws_1_player1" />
+                <input type="number" id="ws_1_p1score" /><br />
+                <input type="text" id="ws_1_player2" />
+                <input type="number" id="ws_1_p2score"/><br />
+            </form>
+            <br />
+
+            <form id="ws_2">
+                <input type="text" id="ws_2_player1" />
+                <input type="number" id="ws_2_p1score" /><br />
+                <input type="text" id="ws_2_player2" />
+                <input type="number" id="ws_2_p2score" /><br />
+            </form>
+            <br />
+            </div>
+
+            <div id="l8">
+                Loser's Eighths<br />
+                <form id="l8_1">
+                    <input type="text" id="l8_1_player1" />
+                    <input type="number" id="l8_1_p1score" /><br />
+                    <input type="text" id="l8_1_player2" />
+                    <input type="number" id="l8_1_p2score" /><br />
+                </form>
+                <br />
+
+                <form id="l8_2">
+                    <input type="text" id="l8_2_player1" />
+                    <input type="number" id="l8_2_p1score" /><br />
+                    <input type="text" id="l8_2_player2" />
+                    <input type="number" id="l8_2_p2score" /><br />
+                </form>
+                <br />
+            </div>
+
+            <div id="wf">
+                Winner's Final<br />
+                <form id="wf_1">
+                    <input type="text" id="wf_1_player1" />
+                    <input type="number" id="wf_1_p1score" /><br />
+                    <input type="text" id="wf_1_player2" />
+                    <input type="number" id="wf_1_p2score" /><br />
+                </form>
+                <br />
+            </div>
+
+            
+
+            <div id="lq">
+                Loser's Quarters<br />
+                <form id="lq_1">
+                    <input type="text" id="lq_1_player1" />
+                    <input type="number" id="lq_1_p1score" /><br />
+                    <input type="text" id="lq_1_player2" />
+                    <input type="number" id="lq_1_p2score" /><br />
+                </form>
+                <br />
+
+                <form id="lq_2">
+                    <input type="text" id="lq_2_player1" />
+                    <input type="number" id="lq_2_p1score" /><br />
+                    <input type="text" id="lq_2_player2" />
+                    <input type="number" id="lq_2_p2score" /><br />
+                </form>
+                <br />
+            </div>
+
+            <div id="ls">
+                Loser's Semi<br />
+                <form id="ls_1">
+                    <input type="text" id="ls_1_player1" />
+                    <input type="number" id="ls_1_p1score" /><br />
+                    <input type="text" id="ls_1_player2" />
+                    <input type="number" id="ls_1_p2score" /><br />
+                </form>
+                <br />
+            </div>
+
+            <div id="lf">
+                Loser's Final<br />
+                <form id="lf_1">
+                    <input type="text" id="lf_1_player1" />
+                    <input type="number" id="lf_1_p1score" /><br />
+                    <input type="text" id="lf_1_player2" />
+                    <input type="number" id="lf_1_p2score" /><br />
+                </form>
+                <br />
+             </div>
+
+            <div id="gf">
+                Grand Finals<br />
+                <form id="gf_1">
+                    <input type="text" id="gf_1_player1" />
+                    <input type="number" id="gf_1_p1score" /><br />
+                    <input type="text" id="gf_1_player2" />
+                    <input type="number" id="gf_1_p2score" /><br />
+                </form>
+                <br />
+            </div>
+
+            <button id="manual_button" onclick="updateJSON_manual()">Update JSON Manually</button>
+        </div>
+    </body>
+</html>

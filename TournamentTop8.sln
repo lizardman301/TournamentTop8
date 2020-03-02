@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TournamentTop8", "TournamentTop8.pyproj", "{2EE9C523-05BC-42BB-BD50-70D7248B25D9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{33CD0C6D-47F3-4EE9-BC96-6ED2B6694399}"
+	ProjectSection(SolutionItems) = preProject
+		web\__overlays\bracket.html = web\__overlays\bracket.html
+		web\main.html = web\main.html
+		web\css\style.css = web\css\style.css
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EE9C523-05BC-42BB-BD50-70D7248B25D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EE9C523-05BC-42BB-BD50-70D7248B25D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0202EBF7-3E7A-4B90-B735-D624535F03AC}
+	EndGlobalSection
+EndGlobal

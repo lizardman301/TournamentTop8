@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="../js/bracket.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../js/greensock-js/src/minified/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <style text="text/CSS">
+
+        @font-face {
+            src: url('../fonts/DeansgateCondensed-Bold.ttf');
+            font-family: "Deansgate";
+        }
+
+        body{
+            width: 1920px;
+            height: 1080px;
+            overflow: hidden;
+            background: transparent;
+            padding: 0px;
+            margin: 0px;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 2px 2px 3px DimGray;
+            font-family: "Deansgate";
+        }
+
+        .bracket{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+
+        .names{
+            position: absolute;
+            width: 396px;
+            height: 48px;
+            line-height: 48px;
+            text-align: center;
+            font-size: 30px;
+            opacity: 0;
+        }
+
+
+        #ws_1_p1_name {
+            left: 53px;
+            top: 83px;
+        }
+
+        #ws_1_p1_score {
+            left: 452px;
+            top: 89px;
+        }
+
+        #ws_1_p2_name {
+            left: 53px;
+            top: 134px;
+        }
+
+        #ws_1_p2_score {
+            left: 452px;
+            top: 140px;
+        }
+
+        #ws_2_p1_name {
+            left: 53px;
+            top: 358px;
+        }
+
+        #ws_2_p1_score {
+            left: 452px;
+            top: 364px;
+        }
+
+        #ws_2_p2_name {
+            left: 53px;
+            top: 409px;
+        }
+
+        #ws_2_p2_score {
+            left: 452px;
+            top: 415px;
+        }
+
+        #l8_1_p1_name {
+            left: 53px;
+            top: 595px;
+        }
+
+        #l8_1_p1_score {
+            left: 452px;
+            top: 601px;
+        }
+
+        #l8_1_p2_name {
+            left: 53px;
+            top: 646px;
+        }
+
+        #l8_1_p2_score {
+            left: 452px;
+            top: 652px;
+        }
+
+        #l8_2_p1_name {
+            left: 53px;
+            top: 898px;
+        }
+
+        #l8_2_p1_score {
+            left: 452px;
+            top: 904px;
+        }
+
+        #l8_2_p2_name {
+            left: 53px;
+            top: 949px;
+        }
+
+        #l8_2_p2_score {
+            left: 452px;
+            top: 955px;
+        }
+
+        #wf_1_p1_name {
+            left: 561px;
+            top: 221px;
+        }
+
+        #wf_1_p1_score {
+            left: 960px;
+            top: 227px;
+        }
+
+        #wf_1_p2_name {
+            left: 561px;
+            top: 272px;
+        }
+
+        #wf_1_p2_score {
+            left: 960px;
+            top: 278px;
+        }
+
+        #lq_1_p1_name {
+            left: 561px;
+            top: 595px;
+        }
+
+        #lq_1_p1_score {
+            left: 960px;
+            top: 601px;
+        }
+
+        #lq_1_p2_name {
+            left: 561px;
+            top: 646px;
+        }
+
+        #lq_1_p2_score {
+            left: 960px;
+            top: 652px;
+        }
+
+        #lq_2_p1_name {
+            left: 561px;
+            top: 898px;
+        }
+
+        #lq_2_p1_score {
+            left: 960px;
+            top: 904px;
+        }
+
+        #lq_2_p2_name {
+            left: 561px;
+            top: 949px;
+        }
+
+        #lq_2_p2_score {
+            left: 960px;
+            top: 955px;
+        }
+
+        #ls_1_p1_name {
+            left: 1006px;
+            top: 746px;
+        }
+
+        #ls_1_p1_score {
+            left: 1405px;
+            top: 752px;
+        }
+
+        #ls_1_p2_name {
+            left: 1006px;
+            top: 797px;
+        }
+
+        #ls_1_p2_score {
+            left: 1405px;
+            top: 803px;
+        }
+
+        #lf_1_p1_name {
+            left: 1471px;
+            top: 746px;
+        }
+
+        #lf_1_p1_score {
+            left: 1870px;
+            top: 752px;
+        }
+
+        #lf_1_p2_name {
+            left: 1471px;
+            top: 797px;
+        }
+
+        #lf_1_p2_score {
+            left: 1870px;
+            top: 803px;
+        }
+
+        #gf_1_p1_name {
+            left: 1471px;
+            top: 221px;
+        }
+
+        #gf_1_p1_score {
+            left: 1870px;
+            top: 227px;
+        }
+
+        #gf_1_p2_name {
+            left: 1471px;
+            top: 272px;
+        }
+
+        #gf_1_p2_score {
+            left: 1870px;
+            top: 278px;
+        }
+
+
+        .scores{
+            position:absolute;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            -webkit-text-stroke: 1ps black;
+            font-size: 34px;
+            opacity: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="bracketBG">
+        <!--<video id="bracketVid" class="scoreboard" type="video/webm" width="1920" height="1080"></video>-->
+        <img src="../img/wlc_bracket.png" />
+    </div>
+
+    <div id="test"></div>
+
+    <div id="bracket">
+        <span id="ws_1_p1_score" class="scores"></span>
+        <span id="ws_1_p1_name" class="names"></span>
+        <span id="ws_1_p2_score" class="scores"></span>
+        <span id="ws_1_p2_name" class="names"></span>
+        <span id="ws_2_p1_score" class="scores"></span>
+        <span id="ws_2_p1_name" class="names"></span>
+        <span id="ws_2_p2_score" class="scores"></span>
+        <span id="ws_2_p2_name" class="names"></span>
+        <span id="l8_1_p1_score" class="scores"></span>
+        <span id="l8_1_p1_name" class="names"></span>
+        <span id="l8_1_p2_score" class="scores"></span>
+        <span id="l8_1_p2_name" class="names"></span>
+        <span id="l8_2_p1_score" class="scores"></span>
+        <span id="l8_2_p1_name" class="names"></span>
+        <span id="l8_2_p2_score" class="scores"></span>
+        <span id="l8_2_p2_name" class="names"></span>
+        <span id="wf_1_p1_score" class="scores"></span>
+        <span id="wf_1_p1_name" class="names"></span>
+        <span id="wf_1_p2_score" class="scores"></span>
+        <span id="wf_1_p2_name" class="names"></span>
+        <span id="lq_1_p1_score" class="scores"></span>
+        <span id="lq_1_p1_name" class="names"></span>
+        <span id="lq_1_p2_score" class="scores"></span>
+        <span id="lq_1_p2_name" class="names"></span>
+        <span id="lq_2_p1_score" class="scores"></span>
+        <span id="lq_2_p1_name" class="names"></span>
+        <span id="lq_2_p2_score" class="scores"></span>
+        <span id="lq_2_p2_name" class="names"></span>
+        <span id="ls_1_p1_score" class="scores"></span>
+        <span id="ls_1_p1_name" class="names"></span>
+        <span id="ls_1_p2_score" class="scores"></span>
+        <span id="ls_1_p2_name" class="names"></span>
+        <span id="lf_1_p1_score" class="scores"></span>
+        <span id="lf_1_p1_name" class="names"></span>
+        <span id="lf_1_p2_score" class="scores"></span>
+        <span id="lf_1_p2_name" class="names"></span>
+        <span id="gf_1_p1_score" class="scores"></span>
+        <span id="gf_1_p1_name" class="names"></span>
+        <span id="gf_1_p2_score" class="scores"></span>
+        <span id="gf_1_p2_name" class="names"></span>
+    </div>
+
+    <script type="text/javascript">
+        
+        var namesize = '30px';
+        var namemove = '-110px';
+        var nametime = .45;
+        var namedelay = .3;
+        var brtime = .3;
+        var brdelay = .7;
+    </script>
+</body>
+</html>

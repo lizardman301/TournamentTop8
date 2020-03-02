@@ -1,0 +1,203 @@
+<span id="ws_1_p1_score" class="scores">1</span>
+<span id="ws_1_p1_name" class="names">test</span>
+<span id="ws_1_p2_score" class="scores">1</span>
+<span id="ws_1_p2_name" class="names">test</span>
+<span id="ws_2_p1_score" class="scores">1</span>
+<span id="ws_2_p1_name" class="names">test</span>
+<span id="ws_2_p2_score" class="scores">1</span>
+<span id="ws_2_p2_name" class="names">test</span>
+<span id="l8_1_p1_score" class="scores">1</span>
+<span id="l8_1_p1_name" class="names">test</span>
+<span id="l8_1_p2_score" class="scores">1</span>
+<span id="l8_1_p2_name" class="names">test</span>
+<span id="l8_2_p1_score" class="scores">1</span>
+<span id="l8_2_p1_name" class="names">test</span>
+<span id="l8_2_p2_score" class="scores">1</span>
+<span id="l8_2_p2_name" class="names">test</span>
+<span id="wf_1_p1_score" class="scores">1</span>
+<span id="wf_1_p1_name" class="names">test</span>
+<span id="wf_1_p2_score" class="scores">1</span>
+<span id="wf_1_p2_name" class="names">test</span>
+<span id="lq_1_p1_score" class="scores">1</span>
+<span id="lq_1_p1_name" class="names">test</span>
+<span id="lq_1_p2_score" class="scores">1</span>
+<span id="lq_1_p2_name" class="names">test</span>
+<span id="lq_2_p1_score" class="scores">1</span>
+<span id="lq_2_p1_name" class="names">test</span>
+<span id="lq_2_p2_score" class="scores">1</span>
+<span id="lq_2_p2_name" class="names">test</span>
+<span id="ls_1_p1_score" class="scores">1</span>
+<span id="ls_1_p1_name" class="names">test</span>
+<span id="ls_1_p2_score" class="scores">1</span>
+<span id="ls_1_p2_name" class="names">test</span>
+<span id="lf_1_p1_score" class="scores">1</span>
+<span id="lf_1_p1_name" class="names">test</span>
+<span id="lf_1_p2_score" class="scores">1</span>
+<span id="lf_1_p2_name" class="names">test</span>
+<span id="gf_1_p1_score" class="scores">1</span>
+<span id="gf_1_p1_name" class="names">test</span>
+<span id="gf_1_p2_score" class="scores">1</span>
+<span id="gf_1_p2_name" class="names">test</span>
+-----------------------------------------------------------
+#ws_1_p1_name{
+	left: 53px;
+	top: 83px;
+}
+#ws_1_p1_score{
+	left: 452px;
+	top: 89px;
+}
+#ws_1_p2_name{
+	left: 53px;
+	top: 134px;
+}
+#ws_1_p2_score{
+	left: 452px;
+	top: 140px;
+}
+#ws_2_p1_name{
+	left: 53px;
+	top: 358px;
+}
+#ws_2_p1_score{
+	left: 452px;
+	top: 364px;
+}
+#ws_2_p2_name{
+	left: 53px;
+	top: 409px;
+}
+#ws_2_p2_score{
+	left: 452px;
+	top: 415px;
+}
+#l8_1_p1_name{
+	left: 53px;
+	top: 595px;
+}
+#l8_1_p1_score{
+	left: 452px;
+	top: 601px;
+}
+#l8_1_p2_name{
+	left: 53px;
+	top: 646px;
+}
+#l8_1_p2_score{
+	left: 452px;
+	top: 652px;
+}
+#l8_2_p1_name{
+	left: 53px;
+	top: 898px;
+}
+#l8_2_p1_score{
+	left: 452px;
+	top: 904px;
+}
+#l8_2_p2_name{
+	left: 53px;
+	top: 949px;
+}
+#l8_2_p2_score{
+	left: 452px;
+	top: 955px;
+}
+#wf_1_p1_name{
+	left: 561px;
+	top: 221px;
+}
+#wf_1_p1_score{
+	left: 960px;
+	top: 227px;
+}
+#wf_1_p2_name{
+	left: 561px;
+	top: 272px;
+}
+#wf_1_p2_score{
+	left: 960px;
+	top: 278px;
+}
+#lq_1_p1_name{
+	left: 561px;
+	top: 595px;
+}
+#lq_1_p1_score{
+	left: 960px;
+	top: 601px;
+}
+#lq_1_p2_name{
+	left: 561px;
+	top: 646px;
+}
+#lq_1_p2_score{
+	left: 960px;
+	top: 652px;
+}
+#lq_2_p1_name{
+	left: 561px;
+	top: 898px;
+}
+#lq_2_p1_score{
+	left: 960px;
+	top: 904px;
+}
+#lq_2_p2_name{
+	left: 561px;
+	top: 949px;
+}
+#lq_2_p2_score{
+	left: 960px;
+	top: 955px;
+}
+#ls_1_p1_name{
+	left: 1006px;
+	top: 746px;
+}
+#ls_1_p1_score{
+	left: 1405px;
+	top: 752px;
+}
+#ls_1_p2_name{
+	left: 1006px;
+	top: 797px;
+}
+#ls_1_p2_score{
+	left: 1405px;
+	top: 803px;
+}
+#lf_1_p1_name{
+	left: 1471px;
+	top: 746px;
+}
+#lf_1_p1_score{
+	left: 1870px;
+	top: 752px;
+}
+#lf_1_p2_name{
+	left: 1471px;
+	top: 797px;
+}
+#lf_1_p2_score{
+	left: 1870px;
+	top: 803px;
+}
+#gf_1_p1_name{
+	left: 1471px;
+	top: 221px;
+}
+#gf_1_p1_score{
+	left: 1870px;
+	top: 227px;
+}
+#gf_1_p2_name{
+	left: 1471px;
+	top: 272px;
+}
+#gf_1_p2_score{
+	left: 1870px;
+	top: 278px;
+}
+-----------------------------------------------------------
+var ws_1_p1_namevar ws_1_p2_namevar ws_2_p1_namevar ws_2_p2_namevar l8_1_p1_namevar l8_1_p2_namevar l8_2_p1_namevar l8_2_p2_namevar wf_1_p1_namevar wf_1_p2_namevar lq_1_p1_namevar lq_1_p2_namevar lq_2_p1_namevar lq_2_p2_namevar ls_1_p1_namevar ls_1_p2_namevar lf_1_p1_namevar lf_1_p2_namevar gf_1_p1_namevar gf_1_p2_name

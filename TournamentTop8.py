@@ -2,7 +2,6 @@ import challonge
 import math
 import json
 import pprint
-#zdmtYhsDLrRqNxhS5qAb3KJHasOIAk0noIQRAz4I
 
 def challonge_top8_export(username, key, url):
     challonge.set_credentials(username, key)
